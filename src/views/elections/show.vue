@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto py-10">
     <div v-if="chartItems && chartItems.length" class="w-full">
-      <div v-for="(chartItem, index) in chartItems" :key="index" class="mb-5 border rounded-lg bg-white mx-auto text-center shadow-lg h-112 py-8">
+      <div v-for="(chartItem, index) in chartItems" :key="index" class="mb-5 border rounded-lg bg-white mx-auto text-center shadow-lg py-8">
         <div class="mb-2 text-xl">
           {{ chartItem.contitituencyStatisticsItem.nameZh }} ({{ chartItem.contitituencyStatisticsItem.constituencyCode }})
         </div>
@@ -10,8 +10,8 @@
           <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{ chartItem.contitituencyStatisticsItem.constituencyType }}</span>
         </div>
 
-        <div class="flex">
-          <div class="w-1/3 px-5">
+        <div class="flex flex-col-reverse lg:flex-row">
+          <div class="w-full lg:w-1/3 px-5">
             <div class="flex mb-4">
               <div class="w-1/3 bg-gray-400 h-8 flex items-center justify-center">
                 投票率
@@ -25,7 +25,7 @@
               </div>
             </div>
           </div>
-          <div class="w-2/3">
+          <div class="w-full lg:w-2/3">
             <GChart
               type="ColumnChart"
               :settings="{ packages: ['corechart', 'bar'] }"
@@ -65,7 +65,7 @@ export default class ElectionsShow extends Vue {
           position: 'none',
         },
         bars: 'horizontal',
-        height: 300,
+        height: 250,
         vAxis: {
           title: '',
         },
