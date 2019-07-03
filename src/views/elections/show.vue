@@ -24,6 +24,19 @@
                 )
               </div>
             </div>
+
+            <div class="flex mb-4">
+              <div class="w-1/3 bg-gray-400 h-8 flex items-center justify-center">
+                廢票
+              </div>
+              <div class="w-2/3 bg-gray-500 h-8 flex items-center justify-center">
+                {{ Math.round(1000 * chartItem.contitituencyStatisticsItem.voidedVotes / chartItem.contitituencyStatisticsItem.availableVotes) / 10 }} %
+                (
+                  {{ chartItem.contitituencyStatisticsItem.voidedVotes }} /
+                  {{ chartItem.contitituencyStatisticsItem.availableVotes }}
+                )
+              </div>
+            </div>
           </div>
           <div class="w-full lg:w-2/3">
             <GChart
