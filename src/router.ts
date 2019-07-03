@@ -14,6 +14,11 @@ export default new Router({
       component: Home,
     },
     {
+      path: '/election_types/:code',
+      props: true,
+      component: () => import(/* webpackChunkName: "about" */ './views/election_types/show.vue'),
+    },
+    {
       path: '/elections/:code',
       props: true,
       // route level code-splitting

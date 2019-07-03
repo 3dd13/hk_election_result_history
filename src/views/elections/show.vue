@@ -7,7 +7,7 @@
         </div>
 
         <div class="mb-5">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{ chartItem.contitituencyStatisticsItem.constituencyType }}</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{{ constituencyTypeDisplayName(chartItem.contitituencyStatisticsItem.constituencyType) }}</span>
         </div>
 
         <div class="flex flex-col-reverse lg:flex-row">
@@ -105,6 +105,8 @@ export default class ElectionsShow extends Vue {
     axios.get(url).then((response) => {
       this.electionResultJson = response.data;
       this.setChartData();
+    }).catch((error) => {
+      console.error(error);
     });
   }
 
@@ -132,6 +134,19 @@ export default class ElectionsShow extends Vue {
     const data = google.visualization.arrayToDataTable(chartItem.rawDataRows);
     const options = chartItem.chartOptions;
     chart.draw(data, google.charts.Bar.convertOptions(options));
+  }
+
+  constituencyTypeDisplayName(constituencyType) {
+    switch (constituencyType) {
+      case 'geographical':
+        return '地方選區';
+        break;
+      case 'functional':
+        return '功能組別';
+        break;
+      default:
+        // code block
+    }
   }
 }
 </script>
