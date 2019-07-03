@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto py-10">
-    <div v-if="chartItems && chartItems.length" class="w-full">
+    <div v-if="chartItems && chartItems.length" class="w-full px-3">
       <div v-for="(chartItem, index) in chartItems" :key="index" class="mb-5 border rounded-lg bg-white mx-auto text-center shadow-lg py-8">
         <div class="mb-2 text-xl">
           {{ chartItem.contitituencyStatisticsItem.nameZh }} ({{ chartItem.contitituencyStatisticsItem.constituencyCode }})
@@ -12,29 +12,31 @@
 
         <div class="flex flex-col-reverse lg:flex-row">
           <div class="w-full lg:w-1/3 px-5">
-            <div class="flex mb-4">
-              <div class="w-1/3 bg-gray-400 h-8 flex items-center justify-center">
-                投票率
+            <div class="flex flex-col content-center h-full justify-center">
+              <div class="flex mb-4">
+                <div class="w-1/3 bg-gray-400 h-8 flex items-center justify-center">
+                  投票率
+                </div>
+                <div class="w-2/3 bg-gray-500 h-8 flex items-center justify-center">
+                  {{ chartItem.contitituencyStatisticsItem.voteSubmissionPercentage }} %
+                  (
+                    {{ chartItem.contitituencyStatisticsItem.submittedVotes }} /
+                    {{ chartItem.contitituencyStatisticsItem.availableVotes }}
+                  )
+                </div>
               </div>
-              <div class="w-2/3 bg-gray-500 h-8 flex items-center justify-center">
-                {{ chartItem.contitituencyStatisticsItem.voteSubmissionPercentage }} %
-                (
-                  {{ chartItem.contitituencyStatisticsItem.submittedVotes }} /
-                  {{ chartItem.contitituencyStatisticsItem.availableVotes }}
-                )
-              </div>
-            </div>
 
-            <div class="flex mb-4">
-              <div class="w-1/3 bg-gray-400 h-8 flex items-center justify-center">
-                廢票
-              </div>
-              <div class="w-2/3 bg-gray-500 h-8 flex items-center justify-center">
-                {{ Math.round(1000 * chartItem.contitituencyStatisticsItem.voidedVotes / chartItem.contitituencyStatisticsItem.availableVotes) / 10 }} %
-                (
-                  {{ chartItem.contitituencyStatisticsItem.voidedVotes }} /
-                  {{ chartItem.contitituencyStatisticsItem.availableVotes }}
-                )
+              <div class="flex mb-4">
+                <div class="w-1/3 bg-gray-400 h-8 flex items-center justify-center">
+                  廢票
+                </div>
+                <div class="w-2/3 bg-gray-500 h-8 flex items-center justify-center">
+                  {{ Math.round(1000 * chartItem.contitituencyStatisticsItem.voidedVotes / chartItem.contitituencyStatisticsItem.availableVotes) / 10 }} %
+                  (
+                    {{ chartItem.contitituencyStatisticsItem.voidedVotes }} /
+                    {{ chartItem.contitituencyStatisticsItem.availableVotes }}
+                  )
+                </div>
               </div>
             </div>
           </div>
@@ -81,6 +83,9 @@ export default class ElectionsShow extends Vue {
         height: 250,
         vAxis: {
           title: '',
+        },
+        chartArea: {
+          width: '60%',
         },
       },
     };
