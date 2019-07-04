@@ -11,7 +11,13 @@
           <router-link to="/en" class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4">
             English [TODO]
           </router-link>
-          <a href="https://github.com/3dd13/govhk_election_reports" class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4">Github</a>
+          <a
+            href="https://github.com/3dd13/govhk_election_reports"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white mr-4"
+            target="_blank"
+          >
+            Github
+          </a>
         </div>
       </div>
     </nav>

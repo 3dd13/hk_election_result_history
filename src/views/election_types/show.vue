@@ -17,50 +17,107 @@
         <li><router-link to="/elections/1998_lce">1998年立法會選舉 [TODO]</router-link></li>
       </ul>
 
-      <ul class="election-list text-left" v-if="code === 'distco'">
-        <li><router-link to="/elections/2019_distco">2019年元朗區議會補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2019年油尖旺區議會大南選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2018年東區區議會佳曉選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2017年中西區區議會補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2015年區議會一般選舉</router-link></li>
-        <li><router-link to="/elections/2019_distco">2015年大埔區議會新富選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2014年離島區議會坪洲及喜靈洲選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2014年東區區議會南豐選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2014年離島區議會東涌北選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2014年南區區議會海怡西選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2013年油尖旺區議會京士柏選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2013年觀塘區議會坪石選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2013年沙田區議會田心選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2012年沙田區議會鞍泰選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2011年區議會選舉</router-link></li>
-        <li><router-link to="/elections/2019_distco">2011年荃灣區議會福來選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2011年元朗區議會十八鄉北選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2010年南區區議會薄扶林選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2009年葵青區議會葵盛東邨選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2009年灣仔區議會鵝頸選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2009年沙田區議會大圍選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2008年黃大仙區議會慈雲西選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2008年油尖旺區議會佐敦東選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2007年區議會選舉</router-link></li>
-        <li><router-link to="/elections/2019_distco">2007年九龍城區議會紅磡灣選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2007年大埔區議會康樂園選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2007年觀塘區議會啓業選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2007年沙田區議會錦英選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2006年東區區議會翠灣選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2006年中西區區議會正街選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2005年觀塘區議會景田選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2005年南區區議會鴨脷洲北選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2005年深水埗區議會南昌中選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2005年東區區議會堡壘選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2004年南區區議會田灣選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2003年區議會選舉</router-link></li>
-        <li><router-link to="/elections/2019_distco">2003年深水埗區議會麗閣選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2003年深水埗區議會美孚選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2003年九龍城區議會海心選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2002年九龍城區議會啟德選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">2000年北區區議會鳳翠選區補選</router-link></li>
-        <li><router-link to="/elections/2019_distco">1999年區議會選舉</router-link></li>
-      </ul>
+      <div class="flex" v-if="code === 'distco'">
+        <div class="w-1/2">
+          <ul class="election-list text-left">
+            <li><router-link to="/elections/2019_distco">2019年元朗區議會補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2019年油尖旺區議會大南選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2018年東區區議會佳曉選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2017年中西區區議會補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2015年區議會一般選舉</router-link></li>
+            <li><router-link to="/elections/2019_distco">2015年大埔區議會新富選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2014年離島區議會坪洲及喜靈洲選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2014年東區區議會南豐選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2014年離島區議會東涌北選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2014年南區區議會海怡西選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2013年油尖旺區議會京士柏選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2013年觀塘區議會坪石選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2013年沙田區議會田心選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2012年沙田區議會鞍泰選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2011年區議會選舉</router-link></li>
+            <li><router-link to="/elections/2019_distco">2011年荃灣區議會福來選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2011年元朗區議會十八鄉北選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2010年南區區議會薄扶林選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2009年葵青區議會葵盛東邨選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2009年灣仔區議會鵝頸選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2009年沙田區議會大圍選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2008年黃大仙區議會慈雲西選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2008年油尖旺區議會佐敦東選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2007年區議會選舉</router-link></li>
+            <li><router-link to="/elections/2019_distco">2007年九龍城區議會紅磡灣選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2007年大埔區議會康樂園選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2007年觀塘區議會啓業選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2007年沙田區議會錦英選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2006年東區區議會翠灣選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2006年中西區區議會正街選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2005年觀塘區議會景田選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2005年南區區議會鴨脷洲北選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2005年深水埗區議會南昌中選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2005年東區區議會堡壘選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2004年南區區議會田灣選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2003年區議會選舉</router-link></li>
+            <li><router-link to="/elections/2019_distco">2003年深水埗區議會麗閣選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2003年深水埗區議會美孚選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2003年九龍城區議會海心選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2002年九龍城區議會啟德選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">2000年北區區議會鳳翠選區補選</router-link></li>
+            <li><router-link to="/elections/2019_distco">1999年區議會選舉</router-link></li>
+          </ul>
+        </div>
+
+        <div class="w-1/2">
+          <ul class="election-list text-left">
+            <li>
+              <a
+                href="https://www.eac.hk/ch/distco/2019dc_elect_map.htm"
+                target="_blank"
+              >
+                2019年區議會一般選舉選區分界
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.eac.hk/ch/distco/2015dc_boundary.htm"
+                target="_blank"
+              >
+                2015年區議會選舉選區分界
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.eac.hk/ch/distco/2011dc_boundary.htm"
+                target="_blank"
+              >
+                2011年區議會選舉選區分界
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.eac.hk/ch/distco/2007dc_boundary.htm"
+                target="_blank"
+              >
+                2007年區議會選舉選區分界
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.eac.hk/ch/distco/2003dc_boundary.htm"
+                target="_blank"
+              >
+                2003年區議會選舉選區分界
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.eac.hk/ch/distco/boundary.htm"
+                target="_blank"
+              >
+                1999年區議會選舉選區分界
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <ul class="election-list text-left" v-if="code === 'rural'">
         <li><router-link to="/elections/2019_rural">鄉郊補選(2019年6月16日)</router-link></li>
