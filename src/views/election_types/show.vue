@@ -71,6 +71,7 @@
               <a
                 href="https://www.eac.hk/ch/distco/2019dc_elect_map.htm"
                 target="_blank"
+                class="result-ready"
               >
                 2019年區議會一般選舉選區分界
               </a>
@@ -79,6 +80,7 @@
               <a
                 href="https://www.eac.hk/ch/distco/2015dc_boundary.htm"
                 target="_blank"
+                class="result-ready"
               >
                 2015年區議會選舉選區分界
               </a>
@@ -87,6 +89,7 @@
               <a
                 href="https://www.eac.hk/ch/distco/2011dc_boundary.htm"
                 target="_blank"
+                class="result-ready"
               >
                 2011年區議會選舉選區分界
               </a>
@@ -95,6 +98,7 @@
               <a
                 href="https://www.eac.hk/ch/distco/2007dc_boundary.htm"
                 target="_blank"
+                class="result-ready"
               >
                 2007年區議會選舉選區分界
               </a>
@@ -103,6 +107,7 @@
               <a
                 href="https://www.eac.hk/ch/distco/2003dc_boundary.htm"
                 target="_blank"
+                class="result-ready"
               >
                 2003年區議會選舉選區分界
               </a>
@@ -111,6 +116,7 @@
               <a
                 href="https://www.eac.hk/ch/distco/boundary.htm"
                 target="_blank"
+                class="result-ready"
               >
                 1999年區議會選舉選區分界
               </a>
