@@ -20,6 +20,7 @@
       <div class="flex" v-if="code === 'distco'">
         <div class="w-1/2">
           <ul class="election-list text-left">
+            <li><router-link to="/elections/distco/2019_dc" class="result-ready">2019年區議會一般選舉</router-link></li>
             <li><router-link to="/elections/distco/2019_yld" class="result-ready">2019年元朗區議會補選</router-link></li>
             <li><router-link to="/elections/distco/2019_ytmd_tn" class="result-ready">2019年油尖旺區議會大南選區補選</router-link></li>
             <li><router-link to="/elections/distco/2019_distco">2018年東區區議會佳曉選區補選</router-link></li>
