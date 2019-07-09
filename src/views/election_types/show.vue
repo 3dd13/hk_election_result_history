@@ -24,7 +24,7 @@
             <li><router-link to="/elections/distco/2019_yld" class="result-ready">2019年元朗區議會補選</router-link></li>
             <li><router-link to="/elections/distco/2019_ytmd_tn" class="result-ready">2019年油尖旺區議會大南選區補選</router-link></li>
             <li><router-link to="/elections/distco/2018_ed_kh" class="result-ready">2018年東區區議會佳曉選區補選</router-link></li>
-            <li><router-link to="/elections/distco/2019_distco">2017年中西區區議會補選</router-link></li>
+            <li><router-link to="/elections/distco/2017_cwd" class="result-ready">2017年中西區區議會補選</router-link></li>
             <li><router-link to="/elections/distco/2019_distco">2015年區議會一般選舉</router-link></li>
             <li><router-link to="/elections/distco/2019_distco">2015年大埔區議會新富選區補選</router-link></li>
             <li><router-link to="/elections/distco/2019_distco">2014年離島區議會坪洲及喜靈洲選區補選</router-link></li>
