@@ -277,12 +277,12 @@ export default class ElectionsShow extends Vue {
           position: 'none',
         },
         bars: 'horizontal',
-        height: 450,
+        height: 500,
         vAxis: {
           title: '',
         },
         chartArea: {
-          width: '60%',
+          width: '50%',
         },
       },
     };
@@ -323,7 +323,7 @@ export default class ElectionsShow extends Vue {
         ['Candidates', 'Votes', { role: 'style' }],
       ];
       const dataRows = map(contitituencyStatisticsItem.candidates, (candidate) => [
-        candidate.nameZh,
+        `${candidate.nameZh}\n[${candidate.policticalAffiliationZh.replace('，', '，\n')}]`,
         candidate.receivedVotes,
         candidate.elected ? '#4C6' : '#789',
       ]);
