@@ -323,7 +323,7 @@ export default class ElectionsShow extends Vue {
         ['Candidates', 'Votes', { role: 'style' }],
       ];
       const dataRows = map(contitituencyStatisticsItem.candidates, (candidate) => [
-        `${candidate.nameZh}\n[${candidate.policticalAffiliationZh.replace('，', '，\n')}]`,
+        this.candidateDisplayName(candidate),
         candidate.receivedVotes,
         candidate.elected ? '#4C6' : '#789',
       ]);
@@ -341,6 +341,10 @@ export default class ElectionsShow extends Vue {
     const data = google.visualization.arrayToDataTable(chartItem.rawDataRows);
     const options = chartItem.chartOptions;
     chart.draw(data, google.charts.Bar.convertOptions(options));
+  }
+
+  candidateDisplayName(candidate) {
+    return `${candidate.nameZh}\n[${candidate.policticalAffiliationZh.replace('，', '，\n')}]`;
   }
 
   constituencyTypeDisplayName(constituencyType) {
