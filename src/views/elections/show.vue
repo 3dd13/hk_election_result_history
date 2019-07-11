@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto py-10">
-    <div v-if="summaryItem" class="w-full px-3">
+    <div v-if="summaryItem" class="px-3">
       <div class="mb-5 rounded-lg bg-white mx-auto text-center shadow-lg py-8 border-l-8 border-green-800">
         <div>
           <div class="text-xl mb-1">

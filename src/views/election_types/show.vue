@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto py-10">
-    <div class="w-full px-8">
+    <div class="px-8">
       <ul class="election-list text-left" v-if="code === 'legco'">
         <li><router-link to="/elections/legco/2018_lcbe_kw" class="result-ready">2018年立法會補選(九龍西地方選區)</router-link></li>
         <li><router-link to="/elections/legco/2018_lcbe" class="result-ready">2018年立法會補選</router-link></li>
