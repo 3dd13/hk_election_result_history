@@ -2,19 +2,78 @@
   <div class="container mx-auto py-10">
     <div class="px-8">
       <ul class="election-list text-left" v-if="code === 'legco'">
-        <li><router-link to="/elections/legco/2018_lcbe_kw" class="result-ready">2018年立法會補選(九龍西地方選區)</router-link></li>
-        <li><router-link to="/elections/legco/2018_lcbe" class="result-ready">2018年立法會補選</router-link></li>
-        <li><router-link to="/elections/legco/2016_lce">2016年立法會換屆選舉 [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2016_lcbe_nte">2016年立法會補選(新界東地方選區) [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2012_lce">2012年立法會選舉 [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2010_lcbe">2010年立法會補選 [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2008_lce">2008年立法會選舉 [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2007_lcbe_hki">2007年立法會補選(香港島地方選區) [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2004_lce">2004年立法會選舉 [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2001">2001年立法會補選(選舉委員會) [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2000_lcbe_hknd">2000年立法會補選(香港島地方選區) [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/2000_lce">2000年立法會選舉 [TODO]</router-link></li>
-        <li><router-link to="/elections/legco/1998_lce">1998年立法會選舉 [TODO]</router-link></li>
+        <li>
+          2018年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2018_lcbe_kw" class="result-ready">立法會補選(九龍西地方選區)</router-link></li>
+            <li><router-link to="/elections/legco/2018_lcbe" class="result-ready">立法會補選</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          2016年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2016_lce">立法會換屆選舉 [TODO]</router-link></li>
+            <li><router-link to="/elections/legco/2016_lcbe_nte">立法會補選(新界東地方選區) [TODO]</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          2012年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2012_lce">立法會選舉 [TODO]</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          2010年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2010_lcbe">立法會補選 [TODO]</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          2008年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2008_lce">立法會選舉 [TODO]</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          2007年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2007_lcbe_hki">補選(香港島地方選區) [TODO]</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          2004年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2004_lce">立法會選舉 [TODO]</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          2001年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2001">立法會補選(選舉委員會) [TODO]</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          2000年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/2000_lcbe_hknd">立法會補選(香港島地方選區) [TODO]</router-link></li>
+            <li><router-link to="/elections/legco/2000_lce">立法會選舉 [TODO]</router-link></li>
+          </ul>
+        </li>
+
+        <li>
+          1998年
+          <ul class="ml-3 mb-3">
+            <li><router-link to="/elections/legco/1998_lce">立法會選舉 [TODO]</router-link></li>
+          </ul>
+        </li>
       </ul>
 
       <div class="flex" v-if="code === 'distco'">
