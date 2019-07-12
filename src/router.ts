@@ -14,17 +14,14 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/election_types/:code',
+      path: '/election_types/:electionType',
       props: true,
       component: () => import(/* webpackChunkName: "about" */ './views/election_types/show.vue'),
     },
     {
-      path: '/elections/:electionType/:code',
+      path: '/election_types/:electionType/elections/:code',
       props: true,
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/elections/show.vue'),
+      component: () => import(/* webpackChunkName: "about" */ './views/election_types/elections/show.vue'),
     },
   ],
 });

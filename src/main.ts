@@ -6,7 +6,11 @@ import './registerServiceWorker';
 import '@/assets/css/tailwind.css';
 import '@/assets/css/custom.css';
 
+import VTooltip from 'v-tooltip';
+
 Vue.config.productionTip = false;
+
+Vue.use(VTooltip);
 
 new Vue({
   router,

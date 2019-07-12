@@ -76,17 +76,17 @@
 
             <div class="flex mb-4">
               <div class="w-1/3 text-right bg-gray-400 px-1">
-                每小時投票人數統計
+                每小時投票人數
               </div>
               <div class="w-2/3">
                 <div
                   v-for="accumulatedVotesByHourItem in chartItem.contitituencyStatisticsItem.accumulatedVotesByHour"
                   v-bind:key="accumulatedVotesByHourItem.countedAt"
                   class="flex border-b border-gray-100">
-                  <div class="w-1/2 text-right">
+                  <div class="w-1/3 text-right">
                     {{ accumulatedVotesByHourItem.countedAt }}
                   </div>
-                  <div class="w-1/2">
+                  <div class="w-2/3">
                     {{ accumulatedVotesByHourItem.numberOfVotes }}
                   </div>
                 </div>
@@ -95,13 +95,15 @@
           </div>
         </div>
         <div class="w-full lg:w-2/3">
-          <GChart
-            type="ColumnChart"
-            :settings="{ packages: ['corechart', 'bar'] }"
-            :createChart="(el, google) => new google.visualization.BarChart(el)"
-            :data="null"
-            @ready="(chart, google) => onChartReady(chart, google, chartItem)"
-          />
+          <div>
+            <GChart
+              type="ColumnChart"
+              :settings="{ packages: ['corechart', 'bar'] }"
+              :createChart="(el, google) => new google.visualization.BarChart(el)"
+              :data="null"
+              @ready="(chart, google) => onChartReady(chart, google, chartItem)"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -2,8 +2,8 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import axios from 'axios';
 import { map, pick } from 'lodash';
 
-import SummaryCard from '../../components/summary_card.vue';
-import ContituencyCard from '../../components/contituency_card.vue';
+import SummaryCard from '../../../components/summary_card.vue';
+import ContituencyCard from '../../../components/contituency_card.vue';
 
 @Component({
   components: {
@@ -21,7 +21,7 @@ export default class ElectionsShow extends Vue {
       position: 'none',
     },
     bars: 'horizontal',
-    height: 500,
+    height: 640,
     vAxis: {
       title: '',
     },
@@ -70,7 +70,12 @@ export default class ElectionsShow extends Vue {
           candidate.receivedVotes,
           candidate.elected ? '#4C6' : '#789',
         ]);
-        const rawDataRows = headerRow.concat(dataRows);
+        const otherNominationsDataRows = map(contitituencyStatisticsItem.otherNominations, (otherNomination) => [
+          this.candidateDisplayName(otherNomination),
+          otherNomination.receivedVotes,
+          '#F00',
+        ]);
+        const rawDataRows = headerRow.concat(dataRows, otherNominationsDataRows);
 
         return {
           chartOptions: this.defaultChartOptions,
@@ -99,6 +104,10 @@ export default class ElectionsShow extends Vue {
   }
 
   candidateDisplayName(candidate: any) {
-    return `${candidate.nameZh}\n[${candidate.policticalAffiliationZh.replace('，', '，\n')}]`;
+    if (candidate.reasonOfNotValidlyNominated) {
+      return `${candidate.nameZh} **${candidate.reasonOfNotValidlyNominated}**\n[${candidate.policticalAffiliationZh.replace('，', '，\n')}]`;
+    } else {
+      return `${candidate.nameZh}\n[${candidate.policticalAffiliationZh.replace('，', '，\n')}]`;
+    }
   }
 }
