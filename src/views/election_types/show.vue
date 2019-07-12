@@ -82,8 +82,18 @@
             <li>
               2019年
               <ul class="ml-3 mb-3">
-                <li><router-link to="/elections/distco/2019_dc" class="result-ready">一般選舉</router-link></li>
-                <li><router-link to="/elections/distco/2019_yld" class="result-ready">元朗區 補選</router-link></li>
+                <li>
+                  <router-link to="/elections/distco/2019_dc" class="result-ready">
+                    一般選舉
+                    <span class="inline-block bg-red-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2">2019/11/24</span>
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/elections/distco/2019_yld" class="result-ready">
+                    元朗區 補選
+                    <span class="inline-block bg-red-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2">2019/07/14</span>
+                  </router-link>
+                </li>
                 <li><router-link to="/elections/distco/2019_ytmd_tn" class="result-ready">油尖旺區 大南選區補選</router-link></li>
               </ul>
             </li>
