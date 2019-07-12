@@ -345,14 +345,7 @@
   </div>
 </template>
 
-<script type="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator';
-
-@Component({})
-export default class ElectionTypesShow extends Vue {
-  @Prop(String) code;
-}
-</script>
+<script lang="ts" src="./show.ts"></script>
 
 <style>
 .election-list a {

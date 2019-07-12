@@ -138,11 +138,4 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-
-@Component
-export default class ElectionSummaryCard extends Vue {
-  @Prop() private summaryItem: any;
-}
-</script>
+<script lang="ts" src="./summary_card.ts"></script>
