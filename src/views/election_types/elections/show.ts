@@ -16,19 +16,6 @@ export default class ElectionsShow extends Vue {
   @Prop() private electionType!: string;
 
   private electionResultJson!: any;
-  private defaultChartOptions = {
-    legend: {
-      position: 'none',
-    },
-    bars: 'horizontal',
-    height: 640,
-    vAxis: {
-      title: '',
-    },
-    chartArea: {
-      width: '50%',
-    },
-  };
 
   data() {
     return {
@@ -61,28 +48,7 @@ export default class ElectionsShow extends Vue {
 
   get chartItems() {
     if (this.electionResultJson) {
-      return map(this.electionResultJson.constituencyStatistics, (contitituencyStatisticsItem) => {
-        const headerRow = [
-          ['Candidates', 'Votes', { role: 'style' }],
-        ];
-        const dataRows = map(contitituencyStatisticsItem.candidates, (candidate) => [
-          this.candidateDisplayName(candidate),
-          candidate.receivedVotes,
-          candidate.elected ? '#4C6' : '#789',
-        ]);
-        const otherNominationsDataRows = map(contitituencyStatisticsItem.otherNominations, (otherNomination) => [
-          this.candidateDisplayName(otherNomination),
-          otherNomination.receivedVotes,
-          '#F00',
-        ]);
-        const rawDataRows = headerRow.concat(dataRows, otherNominationsDataRows);
-
-        return {
-          chartOptions: this.defaultChartOptions,
-          contitituencyStatisticsItem,
-          rawDataRows,
-        };
-      });
+      return this.electionResultJson.constituencyStatistics;
     } else {
       return [];
     }
@@ -100,14 +66,6 @@ export default class ElectionsShow extends Vue {
       ]);
     } else {
       return null;
-    }
-  }
-
-  candidateDisplayName(candidate: any) {
-    if (candidate.reasonOfNotValidlyNominated) {
-      return `${candidate.nameZh} **${candidate.reasonOfNotValidlyNominated}**\n[${candidate.policticalAffiliationZh.replace('，', '，\n')}]`;
-    } else {
-      return `${candidate.nameZh}\n[${candidate.policticalAffiliationZh.replace('，', '，\n')}]`;
     }
   }
 }

@@ -6,11 +6,11 @@ import './registerServiceWorker';
 import '@/assets/css/tailwind.css';
 import '@/assets/css/custom.css';
 
-import VTooltip from 'v-tooltip';
+import VueApexCharts from 'vue-apexcharts';
+
+Vue.component('apexchart', VueApexCharts);
 
 Vue.config.productionTip = false;
-
-Vue.use(VTooltip);
 
 new Vue({
   router,
