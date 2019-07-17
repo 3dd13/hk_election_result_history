@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-10">
+  <div class="container mx-auto py-10 md:mt-16 lg:mt-0 px-5">
     <div class="px-8 flex text-left">
       <ul>
         <li><router-link to="/election_types/rural/elections/2019_rural">鄉郊補選(2019年6月16日)</router-link></li>

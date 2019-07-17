@@ -24,7 +24,7 @@
 
     <div class="flex flex-col md:flex-row bg-teal-800">
       <div class="h-16 bottom-0 md:relative md:h-screen z-10 w-full md:w-48 bg-teal-800">
-        <div class="mt-4 md:mt-20 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-start text-left justify-between">
+        <div class="mt-4 sm:mt-20 md:mt-40 lg:mt-20 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-start text-left justify-between">
           <ul class="list-reset flex flex-row md:flex-col py-0 md:py-3 px-1 md:px-2 text-center md:text-left">
             <li class="mr-3 flex-1">
               <router-link

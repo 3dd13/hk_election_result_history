@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto py-10">
+  <div class="container mx-auto py-10 md:mt-16 lg:mt-0 px-5">
     <div class="px-8">
       <div class="flex flex-wrap">
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/2 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2018年
@@ -17,7 +17,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2016年
@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2012年
@@ -46,7 +46,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2010年
@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2008年
@@ -74,7 +74,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2007年
@@ -88,7 +88,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2004年
@@ -102,7 +102,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2001年
@@ -116,7 +116,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2001年
@@ -130,7 +130,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               2000年
@@ -145,7 +145,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/3 px-5 mb-3">
+        <div class="w-full md:w-1/3 lg:w-1/4 px-5 mb-3">
           <div class="card text-left h-full">
             <div class="card-header">
               1998年

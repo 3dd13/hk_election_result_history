@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-10">
+  <div class="container mx-auto py-10 md:mt-16 lg:mt-0 px-5">
     <div class="flex">
       <div class="w-full lg:w-1/3 px-5">
         <div class="card text-left">

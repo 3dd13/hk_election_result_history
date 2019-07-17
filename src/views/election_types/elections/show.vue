@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-10 px-5">
+  <div class="container mx-auto py-10 md:mt-16 lg:mt-2 px-5">
     <div v-if="summaryItem">
       <ElectionSummaryCard :summaryItem="summaryItem"></ElectionSummaryCard>
     </div>
