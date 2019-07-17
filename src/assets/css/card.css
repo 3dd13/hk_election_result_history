@@ -1,0 +1,11 @@
+.card {
+  @apply border rounded-lg shadow-lg;
+}
+
+.card > .card-header {
+  @apply p-3 border-b-2 text-xl bg-gray-200;
+}
+
+.card > .card-body {
+  @apply p-3;
+}

@@ -115,7 +115,7 @@
             <li>
               2015年
               <ul class="ml-3 mb-3">
-                <li><router-link to="/election_types/distco/elections/2019_distco">一般選舉</router-link></li>
+                <li><router-link to="/election_types/distco/elections/2015_dc" class="result-ready">一般選舉</router-link></li>
                 <li><router-link to="/election_types/distco/elections/2019_distco">大埔區 新富選區補選</router-link></li>
               </ul>
             </li>

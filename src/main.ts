@@ -4,6 +4,7 @@ import router from './router';
 import './registerServiceWorker';
 
 import '@/assets/css/tailwind.css';
+import '@/assets/css/card.css';
 import '@/assets/css/custom.css';
 
 import VueApexCharts from 'vue-apexcharts';

@@ -1,7 +1,13 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { map } from 'lodash';
 
-@Component({})
+import VoteStatisticsChart from './vote_statistics_chart';
+
+@Component({
+  components: {
+    VoteStatisticsChart,
+  },
+})
 export default class ContituencyCard extends Vue {
   @Prop() private chartItem: any;
 
