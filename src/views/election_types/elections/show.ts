@@ -1,6 +1,6 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import axios from 'axios';
-import { pick } from 'lodash';
+import { pick, groupBy, sortBy } from 'lodash';
 
 import ElectionSummaryCard from '../../../components/election_summary_card.vue';
 import ContituencySummaryCard from '../../../components/contituency_summary_card.vue';
@@ -49,6 +49,16 @@ export default class ElectionsShow extends Vue {
   get chartItems() {
     if (this.electionResultJson) {
       return this.electionResultJson.constituencyStatistics;
+    } else {
+      return [];
+    }
+  }
+
+  get chartItemGroups() {
+    if (this.electionResultJson) {
+      const sortedByDistricts = sortBy(this.electionResultJson.constituencyStatistics, 'constituencyCode');
+      const groupedByDistrict = groupBy(sortedByDistricts, 'districtNameZh');
+      return groupedByDistrict;
     } else {
       return [];
     }
