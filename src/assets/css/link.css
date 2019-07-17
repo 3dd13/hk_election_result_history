@@ -1,0 +1,15 @@
+a.result--not-ready {
+  @apply text-red-200;
+}
+
+a.result--not-ready:hover {
+  @apply text-red-400;
+}
+
+a.result--ready {
+  @apply text-green-600;
+}
+
+a.result--ready:hover {
+  @apply text-green-800;
+}

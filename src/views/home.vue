@@ -9,15 +9,15 @@
           <div class="card-body">
             <ul>
               <li>
-                <router-link to="/election_types/distco/elections/2019_dc">
+                <router-link to="/election_types/distco/elections/2019_dc" class="result--ready">
                   2019區議會一般選舉
-                  <span class="inline-block bg-red-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2">2019/11/24</span>
+                  <span class="inline-block bg-blue-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2">2019/11/24</span>
                 </router-link>
               </li>
               <li>
-                <router-link to="#">
+                <router-link to="#" class="result--not-ready">
                   2020立法會選舉
-                  <span class="inline-block bg-red-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2">2020</span>
+                  <span class="inline-block bg-blue-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2">2020</span>
                 </router-link>
               </li>
             </ul>
@@ -34,12 +34,18 @@
             <ul>
               <li>
                 <a href="https://www.eac.hk/ch/legco/lce.htm">
-                  選舉管理委員會 立法會選舉 網頁
+                  <span class="align-middle">
+                    選舉管理委員會 立法會選舉 網頁
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
                 </a>
               </li>
               <li>
                 <a href="https://www.eac.hk/ch/distco/lce.htm">
-                  選舉管理委員會 區議會選舉 網頁
+                  <span class="align-middle">
+                    選舉管理委員會 區議會選舉 網頁
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
                 </a>
               </li>
             </ul>

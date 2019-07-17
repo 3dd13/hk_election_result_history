@@ -14,9 +14,19 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/election_types/:electionType',
+      path: '/election_types/legco',
       props: true,
-      component: () => import(/* webpackChunkName: "about" */ './views/election_types/show.vue'),
+      component: () => import(/* webpackChunkName: "about" */ './views/election_types/legco.vue'),
+    },
+    {
+      path: '/election_types/distco',
+      props: true,
+      component: () => import(/* webpackChunkName: "about" */ './views/election_types/distco.vue'),
+    },
+    {
+      path: '/election_types/rural',
+      props: true,
+      component: () => import(/* webpackChunkName: "about" */ './views/election_types/rural.vue'),
     },
     {
       path: '/election_types/:electionType/elections/:code',
