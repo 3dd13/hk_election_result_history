@@ -7,7 +7,7 @@ a.result--not-ready:hover {
 }
 
 a.result--ready {
-  @apply text-green-600;
+  @apply text-green-600 underline;
 }
 
 a.result--ready:hover {

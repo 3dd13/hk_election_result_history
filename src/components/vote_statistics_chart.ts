@@ -50,4 +50,27 @@ export default class VoteStatisticsChart extends Vue {
       },
     ];
   }
+
+  get votePercentageChartOptions() {
+    return {
+      chart: {
+        id: `chart-${this.statisticsData.nameEn}-votePercentage`,
+        height: 350,
+      },
+      labels: ['有效', '棄權', '廢票'],
+      colors: ['#3C6', '#AAA', '#C63'],
+      markers: {
+        size: 1,
+      },
+      dataLabels: {
+        enabled: true,
+        // offsetY: -30,
+      },
+    };
+  }
+
+  get votePercentageChartDataSeries() {
+    const notSubmitedVotes = this.statisticsData.availableVotes - this.statisticsData.submittedVotes - this.statisticsData.voidedVotes;
+    return [this.statisticsData.submittedVotes, notSubmitedVotes, this.statisticsData.voidedVotes];
+  }
 }

@@ -1,19 +1,18 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 import axios from 'axios';
-import { pick } from 'lodash';
+import { find, pick } from 'lodash';
 
-import ElectionSummaryCard from '../../../components/election_summary_card.vue';
-import ContituencySummaryCard from '../../../components/contituency_summary_card.vue';
+import ContituencyDetailCard from '../../../../components/contituency_detail_card.vue';
 
 @Component({
   components: {
-    ElectionSummaryCard,
-    ContituencySummaryCard,
+    ContituencyDetailCard,
   },
 })
-export default class ElectionsShow extends Vue {
+export default class ConstituenciesShow extends Vue {
   @Prop() private code!: string;
   @Prop() private electionType!: string;
+  @Prop() private constituencyCode!: string;
 
   private electionResultJson!: any;
 
@@ -46,30 +45,27 @@ export default class ElectionsShow extends Vue {
     });
   }
 
-  get chartItems() {
+  get chartItem() {
     if (this.electionResultJson) {
-      return this.electionResultJson.constituencyStatistics;
-    } else {
-      return [];
-    }
-  }
-
-  get summaryItem() {
-    if (this.electionResultJson) {
-      return pick(this.electionResultJson, [
-        'nameZh',
-        'dataSource',
-        'electionPeriod',
-        'candidateApplicationPeriod',
-        'complaintsHandlingPeriod',
-        'overallStatistics',
-      ]);
+      return find(this.electionResultJson.constituencyStatistics, { constituencyCode: this.constituencyCode });
     } else {
       return null;
     }
   }
 
-  get detailPageRoutePrefix() {
-    return `/election_types/${ this.electionType }/elections/${ this.code }`;
+  constituencyTypeDisplayName(constituencyType: string) {
+    switch (constituencyType) {
+      case 'geographical':
+        return '地方選區';
+        break;
+      case 'functional':
+        return '功能組別';
+        break;
+      case 'district':
+        return '區議會';
+        break;
+      default:
+        // code block
+    }
   }
 }

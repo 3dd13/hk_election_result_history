@@ -1,18 +1,17 @@
 <template>
-  <div>
-    <div class="container mx-auto py-10">
-      <div v-if="summaryItem">
-        <SummaryCard :summaryItem="summaryItem"></SummaryCard>
-      </div>
-
-      <div v-if="chartItems && chartItems.length" class="w-full px-3">
-        <div v-for="(chartItem, index) in chartItems" :key="index">
-          <ContituencyCard :chartItem="chartItem"></ContituencyCard>
-        </div>
-      </div>
+  <div class="container mx-auto py-10 px-5">
+    <div v-if="summaryItem">
+      <ElectionSummaryCard :summaryItem="summaryItem"></ElectionSummaryCard>
     </div>
 
-    <div class="fixed pin z-50 overflow-auto bg-smoke-light flex">
+    <div v-if="chartItems && chartItems.length">
+      <div class="flex flex-wrap">
+        <div v-for="(chartItem, index) in chartItems" :key="index" class="w-full lg:w-1/3 px-3 mb-3">
+          <ContituencySummaryCard
+            :chartItem="chartItem"
+            :detailPageRoutePrefix="detailPageRoutePrefix"></ContituencySummaryCard>
+        </div>
+      </div>
     </div>
   </div>
 </template>

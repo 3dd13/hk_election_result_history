@@ -21,7 +21,6 @@
                   <li>
                     <router-link to="/election_types/distco/elections/2019_yld" class="result--ready">
                       元朗區 補選
-                      <span class="inline-block bg-blue-200 rounded-full px-2 py-0 text-sm font-semibold text-gray-700 mr-2">2019/07/14</span>
                     </router-link>
                   </li>
                   <li>
@@ -316,9 +315,10 @@
 
           <div class="card-body">
             <ul class="ml-3 mb-3">
-              <li>
+              <li class="py-1">
                 <a
                   href="https://www.eac.hk/ch/distco/elections/2019dc_elect_map.htm"
+                  class="underline"
                   target="_blank"
                 >
                   <span class="align-middle">
@@ -327,9 +327,10 @@
                   <img src="/images/link-symbol.svg" class="inline-block align-middle">
                 </a>
               </li>
-              <li>
+              <li class="py-1">
                 <a
                   href="https://www.eac.hk/ch/distco/elections/2015dc_boundary.htm"
+                  class="underline"
                   target="_blank"
                 >
                   <span class="align-middle">
@@ -338,9 +339,10 @@
                   <img src="/images/link-symbol.svg" class="inline-block align-middle">
                 </a>
               </li>
-              <li>
+              <li class="py-1">
                 <a
                   href="https://www.eac.hk/ch/distco/elections/2011dc_boundary.htm"
+                  class="underline"
                   target="_blank"
                 >
                   <span class="align-middle">
@@ -349,9 +351,10 @@
                   <img src="/images/link-symbol.svg" class="inline-block align-middle">
                 </a>
               </li>
-              <li>
+              <li class="py-1">
                 <a
                   href="https://www.eac.hk/ch/distco/elections/2007dc_boundary.htm"
+                  class="underline"
                   target="_blank"
                 >
                   <span class="align-middle">
@@ -360,9 +363,10 @@
                   <img src="/images/link-symbol.svg" class="inline-block align-middle">
                 </a>
               </li>
-              <li>
+              <li class="py-1">
                 <a
                   href="https://www.eac.hk/ch/distco/elections/2003dc_boundary.htm"
+                  class="underline"
                   target="_blank"
                 >
                   <span class="align-middle">
@@ -371,9 +375,10 @@
                   <img src="/images/link-symbol.svg" class="inline-block align-middle">
                 </a>
               </li>
-              <li>
+              <li class="py-1">
                 <a
                   href="https://www.eac.hk/ch/distco/elections/boundary.htm"
+                  class="underline"
                   target="_blank"
                 >
                   <span class="align-middle">

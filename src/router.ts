@@ -33,5 +33,10 @@ export default new Router({
       props: true,
       component: () => import(/* webpackChunkName: "about" */ './views/election_types/elections/show.vue'),
     },
+    {
+      path: '/election_types/:electionType/elections/:code/constituencies/:constituencyCode',
+      props: true,
+      component: () => import(/* webpackChunkName: "about" */ './views/election_types/elections/constituencies/show.vue'),
+    },
   ],
 });

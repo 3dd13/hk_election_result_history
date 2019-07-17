@@ -136,23 +136,11 @@ export default class ContituencyCard extends Vue {
     }
   }
 
-  candidateDisplayPolicticalAffiliation(candidate) {
-    return candidate.policticalAffiliationZh.replace('，', '，\n');
+  candidateDisplayOccupation(candidate) {
+    return candidate.occupationZh.replace('，', '<br/>');
   }
 
-  constituencyTypeDisplayName(constituencyType: string) {
-    switch (constituencyType) {
-      case 'geographical':
-        return '地方選區';
-        break;
-      case 'functional':
-        return '功能組別';
-        break;
-      case 'district':
-        return '區議會';
-        break;
-      default:
-        // code block
-    }
+  candidateDisplayPolicticalAffiliation(candidate) {
+    return candidate.policticalAffiliationZh.replace('，', '，\n');
   }
 }
