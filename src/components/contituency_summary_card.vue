@@ -11,11 +11,11 @@
     </div>
 
     <div v-if="chartItem.uncontestedConstituency">
-      <div class="flex justify-center">
+      <div class="flex justify-center px-5 mb-5">
         <div class="w-full flex px-5">
           <div
             v-for="candidate in chartItem.candidates" :key="candidate.candidateNumber"
-            class="w-full flex px-5"
+            class="w-full flex px-5 border-b"
           >
             <div class="w-1/2 py-1">
               {{ candidate.nameZh }}
@@ -27,6 +27,12 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="mr-5 text-right text-sm">
+        <router-link :to="detailPageRoute" class="text-green-600 underline">
+          <span class="">詳細數據 &gt;</span>
+        </router-link>
       </div>
     </div>
 

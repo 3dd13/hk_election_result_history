@@ -5,7 +5,7 @@
         <div class="w-full lg:w-1/3 px-5">
           <div
             v-for="candidate in chartItem.candidates" :key="candidate.candidateNumber"
-            class="flex bg-green-400 py-1 text-white"
+            class="flex bg-blue-400 py-1 text-white"
           >
             <div class="w-1/2">
               {{ candidate.nameZh }}
@@ -16,6 +16,26 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center my-5">
+        <div class="w-full lg:w-1/3 px-5">
+          <div class="flex py-1 bg-gray-200">
+            <div class="w-1/2">
+              選民數目：
+            </div>
+            <div class="w-1/2">
+              {{ chartItem.potentialAvailableVotes }} *
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center py-1 italic text-sm">
+        <div class="w-full px-5">
+          * 自動當選區域的已登記選民數目，沒有在選舉報告書公布。以上數字用年度選民登記冊做參考。<br/>
+          參考來源：https://www.voterregistration.gov.hk
         </div>
       </div>
     </div>
