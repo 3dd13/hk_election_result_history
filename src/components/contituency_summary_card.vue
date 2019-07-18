@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div v-if="chartItem.autoDulyElected">
+    <div v-if="chartItem.uncontestedConstituency">
       <div class="flex justify-center">
         <div class="w-full flex px-5">
           <div
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div v-if="!chartItem.autoDulyElected">
+    <div v-if="!chartItem.uncontestedConstituency">
       <div class="flex flex-wrap justify-center px-5 mb-5">
         <div
           v-for="candidate in chartItem.candidates" :key="candidate.candidateNumber"

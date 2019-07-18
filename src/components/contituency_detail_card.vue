@@ -1,6 +1,6 @@
 <template>
   <div class="mb-5 border rounded-lg bg-white mx-auto text-center shadow-lg py-8">
-    <div v-if="chartItem.autoDulyElected">
+    <div v-if="chartItem.uncontestedConstituency">
       <div class="flex justify-center">
         <div class="w-full lg:w-1/3 px-5">
           <div
@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div v-if="!chartItem.autoDulyElected">
+    <div v-if="!chartItem.uncontestedConstituency">
       <VoteStatisticsChart :statisticsData="chartItem"></VoteStatisticsChart>
 
       <hr/>
