@@ -22,7 +22,7 @@
     <div v-if="electionType != 'distco'">
       <div v-if="chartItems && chartItems.length">
         <div class="flex flex-wrap">
-          <div v-for="(chartItem, index) in chartItems" :key="index" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-3">
+          <div v-for="(chartItem, index) in chartItems" :key="index" class="w-full h-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-3">
             <ContituencySummaryCard
               :chartItem="chartItem"
               :detailPageRoutePrefix="detailPageRoutePrefix"></ContituencySummaryCard>
