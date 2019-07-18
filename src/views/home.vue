@@ -52,6 +52,122 @@
           </div>
         </div>
       </div>
+
+      <div class="w-full lg:w-1/3 px-5">
+        <div class="card text-left">
+          <div class="card-header">
+            選民年齡及性別分佈
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2018.html">
+                  <span class="align-middle">
+                    2018年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2017.html">
+                  <span class="align-middle">
+                    2017年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2016.html">
+                  <span class="align-middle">
+                    2016年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2015.html">
+                  <span class="align-middle">
+                    2015年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2014.html">
+                  <span class="align-middle">
+                    2014年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2013.html">
+                  <span class="align-middle">
+                    2013年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2012.html">
+                  <span class="align-middle">
+                    2012年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2011.html">
+                  <span class="align-middle">
+                    2011年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2010.html">
+                  <span class="align-middle">
+                    2010年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2009.html">
+                  <span class="align-middle">
+                    2009年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2008.html">
+                  <span class="align-middle">
+                    2008年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2007.html">
+                  <span class="align-middle">
+                    2007年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.voterregistration.gov.hk/chi/statistic2006.html">
+                  <span class="align-middle">
+                    2006年
+                  </span>
+                  <img src="/images/link-symbol.svg" class="inline-block align-middle">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
