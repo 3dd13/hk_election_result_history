@@ -12,12 +12,12 @@ export default class ContituencySummaryCard extends Vue {
   @Prop() private chartItem: any;
   @Prop() private detailPageRoutePrefix: any;
 
-  get electedCandidates() {
-    return filter(this.chartItem.candidates, 'elected');
-  }
-
   get detailPageRoute() {
     return `${ this.detailPageRoutePrefix }/constituencies/${this.chartItem.constituencyCode}`;
+  }
+
+  get allCandidates() {
+    return this.chartItem.candidates.concat(this.chartItem.otherNominations);
   }
 
   candidateDisplayName(candidate: any) {

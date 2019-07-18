@@ -12,17 +12,20 @@
 
     <div v-if="chartItem.uncontestedConstituency">
       <div class="flex justify-center px-5 mb-5">
-        <div class="w-full flex px-5">
+        <div class="w-full px-5">
           <div
-            v-for="candidate in chartItem.candidates" :key="candidate.candidateNumber"
-            class="w-full flex px-5 border-b"
+            v-for="candidate in allCandidates" :key="candidate.candidateNumber"
+            class="flex px-5 border-b"
           >
             <div class="w-1/2 py-1">
               {{ candidate.nameZh }}
             </div>
-            <div class="w-1/2 text-blue-400 font-bold py-1">
-              <div>
+            <div class="w-1/2 font-bold py-1">
+              <div v-if="candidate.elected" class="text-blue-400">
                 自動當選
+              </div>
+              <div v-if="!candidate.elected" class="text-gray-400">
+                {{ candidate.reasonOfNotValidlyNominated }}
               </div>
             </div>
           </div>
@@ -39,7 +42,7 @@
     <div v-if="!chartItem.uncontestedConstituency">
       <div class="flex flex-wrap justify-center px-5 mb-5">
         <div
-          v-for="candidate in chartItem.candidates" :key="candidate.candidateNumber"
+          v-for="candidate in allCandidates" :key="candidate.candidateNumber"
           class="w-full flex px-5 border-b"
         >
           <div class="w-1/2 py-1">

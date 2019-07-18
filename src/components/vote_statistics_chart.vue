@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col lg:flex-row items-start ">
-    <div class="w-full lg:w-2/3 p-8">
+    <div class="w-full lg:w-2/3 p-8" v-if="this.statisticsData.accumulatedVotesByHour && this.statisticsData.accumulatedVotesByHour.length > 0">
       <div class="">
         每小時投票人數
       </div>
@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <div class="w-full lg:w-1/3 p-8">
+    <div class="w-full lg:w-1/3 p-8" v-if="this.statisticsData.availableVotes && this.statisticsData.availableVotes > 0">
       <div class="mb-5">
         投票率
       </div>

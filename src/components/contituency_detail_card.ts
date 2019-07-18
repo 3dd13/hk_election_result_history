@@ -106,7 +106,7 @@ export default class ContituencyCard extends Vue {
         }),
       },
       {
-        name: '提名無效',
+        name: '無效',
         data: map(allCandidates, (otherNomination) => {
           return 0;
         }),
