@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto py-10 md:mt-16 lg:mt-0 px-5">
-    <div class="flex">
-      <div class="w-full lg:w-1/3 px-5">
+    <div class="flex flex-wrap">
+      <div class="w-full lg:w-1/3 px-5 mb-3">
         <div class="card text-left">
           <div class="card-header">
             即將進行的選舉
@@ -25,7 +25,7 @@
         </div>
       </div>
 
-      <div class="w-full lg:w-1/3 px-5">
+      <div class="w-full lg:w-1/3 px-5 mb-3">
         <div class="card text-left">
           <div class="card-header">
             其他有用連結
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <div class="w-full lg:w-1/3 px-5">
+      <div class="w-full lg:w-1/3 px-5 mb-3">
         <div class="card text-left">
           <div class="card-header">
             選民年齡及性別分佈
