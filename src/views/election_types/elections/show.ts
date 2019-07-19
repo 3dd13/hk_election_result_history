@@ -38,7 +38,7 @@ export default class ElectionsShow extends Vue {
   }
 
   fetchElectionResult() {
-    const url = `https://raw.githubusercontent.com/3dd13/govhk_election_reports/master/data/election_result/${this.electionType}/${this.code}.json`;
+    const url = `https://raw.githubusercontent.com/3dd13/govhk_election_reports/master/data/election_results/${this.electionType}/${this.code}.json`;
     axios.get(url).then((response) => {
       this.electionResultJson = response.data;
     }).catch((error) => {
