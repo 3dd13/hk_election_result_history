@@ -16,27 +16,37 @@ export default new Router({
     {
       path: '/election_types/legco',
       props: true,
-      component: () => import(/* webpackChunkName: "about" */ './views/election_types/legco.vue'),
+      component: () => import(/* webpackChunkName: "election_types" */ './views/election_types/legco.vue'),
     },
     {
       path: '/election_types/distco',
       props: true,
-      component: () => import(/* webpackChunkName: "about" */ './views/election_types/distco.vue'),
+      component: () => import(/* webpackChunkName: "election_types" */ './views/election_types/distco.vue'),
     },
     {
       path: '/election_types/rural',
       props: true,
-      component: () => import(/* webpackChunkName: "about" */ './views/election_types/rural.vue'),
+      component: () => import(/* webpackChunkName: "election_types" */ './views/election_types/rural.vue'),
     },
     {
       path: '/election_types/:electionType/elections/:code',
       props: true,
-      component: () => import(/* webpackChunkName: "about" */ './views/election_types/elections/show.vue'),
+      component: () => import(/* webpackChunkName: "elections" */ './views/election_types/elections/show.vue'),
     },
     {
       path: '/election_types/:electionType/elections/:code/constituencies/:constituencyCode',
       props: true,
-      component: () => import(/* webpackChunkName: "about" */ './views/election_types/elections/constituencies/show.vue'),
+      component: () => import(/* webpackChunkName: "elections" */ './views/election_types/elections/constituencies/show.vue'),
+    },
+    {
+      path: '/voter_registrations',
+      props: true,
+      component: () => import(/* webpackChunkName: "voter_registrations" */ './views/voter_registrations/index.vue'),
+    },
+    {
+      path: '/voter_registrations/:year',
+      props: true,
+      component: () => import(/* webpackChunkName: "voter_registrations" */ './views/voter_registrations/show.vue'),
     },
   ],
 });
